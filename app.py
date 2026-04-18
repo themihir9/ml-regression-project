@@ -1,4 +1,3 @@
-
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
@@ -155,7 +154,7 @@ for i in range(0,c):
     
     
     if (df.loc[i,'humidity'])<LW:
-        df.loc[i, 'humidity'] = float(LW[0])
+        df.loc[i,'humidity']=LW
         s=s+1
     elif (df.loc[i,'humidity'])>UW: # Added condition for upper outliers
         df.loc[i,'humidity']=UW
