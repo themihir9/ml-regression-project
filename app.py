@@ -312,4 +312,3 @@ if st.button('Predict Power Generated', key='predict_button'):
     st.success(f'Predicted Power Generated: {predicted_power[0]:.2f} Joules')
 
 
-# python -m streamlit run app.py
