@@ -1,3 +1,4 @@
+
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
@@ -6,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 
-df = pd.read_csv("solarpowergeneration.csv")
+df = pd.read_csv("solarpowergeneration (2) (1).csv")
 
 
 Q1 = np.percentile(df["distance-to-solar-noon"],25)
@@ -312,3 +313,4 @@ if st.button('Predict Power Generated', key='predict_button'):
     st.success(f'Predicted Power Generated: {predicted_power[0]:.2f} Joules')
 
 
+# %%
