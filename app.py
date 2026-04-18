@@ -155,7 +155,7 @@ for i in range(0,c):
     
     
     if (df.loc[i,'humidity'])<LW:
-        df.loc[i,'humidity']=LW
+        df.loc[i, 'humidity'] = float(LW[0])
         s=s+1
     elif (df.loc[i,'humidity'])>UW: # Added condition for upper outliers
         df.loc[i,'humidity']=UW
